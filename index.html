@@ -1,0 +1,124 @@
+<!DOCTYPE html> <!-- This declares the document type and which version is being used -->
+<html lang="en" dir="ltr">
+<!-- This tells the browser that everything between the opening and closing tags will be HTML code.
+  The HTML code consists of a Head and Body. -->
+
+<head>
+  <!-- The head element is the part of the HTML file that tells the browser how to handle the webpage i.e. title -->
+  <meta charset="utf-8">
+  <!-- The meta elements give extra meta/associated data to html document - it gives information to search engines about
+      the content of the website and how to display it. The charset attribute tells it that all the text inside our webpage is encoded with the utf encoding system.
+      utf-8 is the standard encoding when using HTML 5 because it includes all of the international symbols. This way our webpage presents correctly and doesn't get garbled. -->
+  <title>Briana's Personal Site</title> <!-- This content becomes the title of the webpage tab in the browser -->
+</head>
+
+<body>
+  <table cellspacing="20">
+    <td><img src="images/briana-photo-15%.png" alt="Picture of Briana Price"></td>
+    <td>
+      <h1>Briana Price</h1>
+      <p><em>My "title" here.</em></p>
+      <p>I live in Phoenix, Arizona with my husband and three kids. I love coffee, watching movies and completing puzzles.</p>
+    </td>
+  </table>
+
+  <hr>
+  <h3>Education</h3>
+  <ul>
+    <!-- unordered list (default are filled bullets) -->
+    <li>Udemy | Online | The Complete 2022 Web Development Bootcamp | January 2022</li>
+    <li><a href="https://www.washington.edu/">University of Washington</a> | Seattle, WA | Bachelor of Science Mechanical Engineering</li>
+    <li>Sno-Isle Skills Center | Everett, WA</li>
+    <li>Kamiak High School | Mukilteo, WA</li>
+  </ul>
+  <hr>
+  <h3>Work Experience</h3>
+  <table cellspacing="10">
+    <thead>
+      <th>Dates</th>
+      <th>Work</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>September 2020-September 2021</td>
+        <td>Mosaic Construction Services</td>
+      </tr>
+      <tr>
+        <td>January 2017-September 2020</td>
+        <td>MHI Residential</td>
+      </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+  </table>
+<hr>
+  <h3>Skills</h3>
+  <!-- This solution worked to create a list of skills within a table 1x2 but Angela's soution is to create nested tables.
+  <table border="1">
+    <tr>
+      <td>HTML⭐⭐
+        <p>CSS ⭐</p>
+      </td>
+      <td>JavaScript ⭐
+        <p>Atom ⭐</p>
+      </td>
+    </tr>
+  </table>
+  -->
+
+  <!-- This is the nested table solution to create borders around a 1x2 top level table. This is hard to read and is a lot of extra code which is why CSS should be used to style the table.
+  <table border="1">
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <td>HTML</td>
+            <td>⭐⭐</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>⭐</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table>
+          <tr>
+            <td>JavaScript</td>
+            <td>⭐</td>
+          </tr>
+          <tr>
+            <td>Atom</td>
+            <td>⭐</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  -->
+
+  <table cellspacing="10">
+    <tr>
+      <td>HTML</td>
+      <td>⭐⭐</td>
+    </tr>
+    <tr>
+      <td>CSS</td>
+      <td>⭐</td>
+    </tr>
+    <tr>
+      <td>JavaScript</td>
+      <td>⭐</td>
+    </tr>
+    <tr>
+      <td>Atom</td>
+      <td>⭐</td>
+    </tr>
+  </table>
+  <h2><a href="hobbies.html">My Hobbies</a>
+    <a href="contact-me.html">Contact Me!</a></h2>
+
+</body>
+
+</html>
